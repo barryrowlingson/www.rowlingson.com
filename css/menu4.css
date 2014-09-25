@@ -1,0 +1,93 @@
+
+/* Step 10 - Clearing the float */
+#menu1 {display:block; width:544px; height:43px; margin: auto;}
+
+/* Step 3 - get rid of the bullets and margin */
+#menu1 ul {margin:0; padding:0; list-style-type:none;}
+
+/* Step 4 and 7 - make the list horizontal and giving a 1px gap */
+#menu1 li {float:left; margin-right:1px;}
+
+/* Step 5 - Adding the initial images */
+
+#menu1 li.list1 {background:transparent url(../graphics/menutext1.png) 0px 0px no-repeat;}
+#menu1 li.list2 {background:transparent url(../graphics/menutext1.png) -139px 0px no-repeat;}
+#menu1 li.list3 {background:transparent url(../graphics/menutext1.png) -358px 0px no-repeat;}
+#menu1 li.list4 {background:transparent url(../graphics/menutext1.png) -458px 0px no-repeat;}
+
+/* Step 6 - General link styling */
+
+#menu1 a {display:block; width:83px; height:0; padding-top:43px; color:#000; overflow:hidden;}
+
+/* hack for older versions of IE with incorrect box model */
+
+* html #menu1 a:link, * html #menu1 a:visited {height:128px; he\ight:0;}
+
+/* Step 8 - Adding the background images to the link tags */
+
+#menu1 a#item1 {background:transparent url(../graphics/menutext1.png) 0px 0px no-repeat; width: 140px;}
+#menu1 a#item2 {background:transparent url(../graphics/menutext1.png) 0px -90px no-repeat; width: 199px;}
+#menu1 a#item3 {background:transparent url(../graphics/menutext1.png) 0px -90px no-repeat; width: 106px;}
+#menu1 a#item4 {background:transparent url(../graphics/menutext1.png) 0px -90px no-repeat; width: 86px;}
+
+/* Step 9 - Adding the :hover style */
+
+#menu1 a#item1:hover {background-position:0px -43px; z-index:50;}
+#menu1 a#item2:hover {background-position:-139px -43px; z-index:50;}
+#menu1 a#item3:hover {background-position:-358px -43px; z-index:50;}
+#menu1 a#item4:hover {background-position:-458px -43px; z-index:50;}
+
+* html #menu1 a:hover {height:128px; he\ight:0;}
+
+
+/* Second menu */
+#menu2 {display:block; width:515px; height:43px; margin: auto;}
+
+/* Step 3 - get rid of the bullets and margin */
+#menu2 ul {margin:0; padding:0; list-style-type:none;}
+
+/* Step 4 and 7 - make the list horizontal and giving a 1px gap */
+#menu2 li {float:left; margin-right:1px;}
+
+/* Step 5 - Adding the initial images */
+
+#menu2 li.list1 {background:transparent url(../graphics/menutext2.png) 0px 0px no-repeat;}
+#menu2 li.list2 {background:transparent url(../graphics/menutext2.png) -47px 0px no-repeat;}
+#menu2 li.list3 {background:transparent url(../graphics/menutext2.png) -142px 0px no-repeat;}
+#menu2 li.list4 {background:transparent url(../graphics/menutext2.png) -183px 0px no-repeat;}
+#menu2 li.list5 {background:transparent url(../graphics/menutext2.png) -233px 0px no-repeat;}
+#menu2 li.list6 {background:transparent url(../graphics/menutext2.png) -294px 0px no-repeat;}
+#menu2 li.list7 {background:transparent url(../graphics/menutext2.png) -391px 0px no-repeat;}
+#menu2 li.list8 {background:transparent url(../graphics/menutext2.png) -467px 0px no-repeat;}
+
+/* Step 6 - General link styling */
+
+#menu2 a {display:block; width:515px; height:0; padding-top:43px; color:#000; overflow:hidden;}
+
+/* hack for older versions of IE with incorrect box model */
+
+* html #menu2 a:link, * html #menu2 a:visited {height:128px; he\ight:0;}
+
+/* Step 8 - Adding the background images to the link tags */
+
+#menu2 a#item1 {background:transparent url(../graphics/menutext2.png) 0px 0px no-repeat; width: 46px;}
+#menu2 a#item2 {background:transparent url(../graphics/menutext2.png) 0px -90px no-repeat; width: 94px;}
+#menu2 a#item3 {background:transparent url(../graphics/menutext2.png) 0px -90px no-repeat; width: 40px;}
+#menu2 a#item4 {background:transparent url(../graphics/menutext2.png) 0px -90px no-repeat; width: 49px;}
+#menu2 a#item5 {background:transparent url(../graphics/menutext2.png) 0px -90px no-repeat; width: 60px;}
+#menu2 a#item6 {background:transparent url(../graphics/menutext2.png) 0px -90px no-repeat; width: 96px;}
+#menu2 a#item7 {background:transparent url(../graphics/menutext2.png) 0px -90px no-repeat; width: 75px;}
+#menu2 a#item8 {background:transparent url(../graphics/menutext2.png) 0px -90px no-repeat; width: 47px;}
+
+/* Step 9 - Adding the :hover style */
+
+#menu2 a#item1:hover {background-position:0px -43px; z-index:50;}
+#menu2 a#item2:hover {background-position:-47px -43px; z-index:50;}
+#menu2 a#item3:hover {background-position:-142px -43px; z-index:50;}
+#menu2 a#item4:hover {background-position:-183px -43px; z-index:50;}
+#menu2 a#item5:hover {background-position:-233px -43px; z-index:50;}
+#menu2 a#item6:hover {background-position:-294px -43px; z-index:50;}
+#menu2 a#item7:hover {background-position:-391px -43px; z-index:50;}
+#menu2 a#item8:hover {background-position:-467px -43px; z-index:50;}
+
+* html #menu2 a:hover {height:128px; he\ight:0;}

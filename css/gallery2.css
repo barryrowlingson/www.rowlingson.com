@@ -1,0 +1,99 @@
+
+@media screen, projection, print {
+.BeNiceToMacIE5 {  /* reveal @media rules to MacIE */
+	font-family: "\"}\"";
+	font-family: inherit;
+}
+
+
+/* gallery-specific styles */
+
+/* gallery container */
+.gallery {
+	text-align: center;    /* centers inline paragraphs */
+	margin: 1em 5%;
+	background-color: #444;
+	border: 1px solid #999;
+	padding: .5em;
+}
+.gallery a {
+	text-decoration: none;
+}
+.gallery a img {
+	border-width: 1px;
+        border-color: black;
+	vertical-align: middle;
+}
+.gallery a:hover img {
+	border-width: 1px;
+        border-color: white;
+	vertical-align: middle;
+}
+
+/* outer container for each image/caption pair */
+.gallery p {
+	display: inline; background-color: #444;
+}
+
+
+
+/* For the <a> container, the best default display value is inline-table, but browser support isn't very good. Opera versions 6 and earlier totally mangle anything except display:table-cell, so that is set by default and the preferred display values are at the end of this stylesheet, within hacks that hide them from those Opera versions. No other browsers tested seemed to have any trouble with setting the different display values within a single rule. */
+
+/* inner container for each image/caption pair */
+.gallery a {
+	display: table-cell;   /* default, for gecko & Opera6- */
+	margin: .5em;
+	padding: 5px;
+	vertical-align: top;   /* aligns the img/caption container */
+	width: 8em;            /* adjusts with text size */
+	min-width: 110px;      /* not always honored, but that's OK */
+	border: 1px solid #444;
+}
+
+
+/* image container, sets height so image can be vertically centered and the caption starts in the same vertical position regardless of image height, except WinIE does not apply line-height to images. oh well, most other browsers do... */
+.gallery span {
+	display: block;        /* fill container width, force a line break */
+	height: 110px;         /* a bit larger than highest img */
+	line-height: 110px;    /* same value as height */
+	text-align: center;
+/*	border: 1px dashed #f00; /* uncomment to show */
+}
+
+/* caption container, sets height (for 2 lines) so each outlined image/caption pair is the same height (except in WinIE) */
+.gallery i {
+	display: block;
+	height: 2.5em;         /* makes each box a consistent height */
+	padding: 5px 5px 0 5px;
+	text-align: center;
+        color: #999;
+        font-size: 50%;
+	font-style: normal;
+	line-height: 120%;     /* standard spacing */
+/*	border: 1px dashed #00f; /* uncomment to show */
+}
+
+/* Owen hack, hides from WinIE, Opera versions 6- & some KHTML */
+head:first-child+body .gallery a {
+	display: table-cell;   /* gecko & Opera6- */
+	display: inline-table; /* Safari & some other browsers */
+	display: inline-block; /* WinIE & some other browsers */
+}
+
+/* star-html hack to show <a> rule(s) just to IE (Win and Mac) */
+* html .gallery a {
+	display: table-cell;   /* gecko & Opera6- */
+	display: inline-table; /* Safari & some other browsers */
+	display: inline-block; /* WinIE & some other browsers */
+}
+/* image is not clickable in WinIE with display:block :( \*/
+* html .gallery span {
+	display: inline;
+}
+* html .gallery a:hover i {
+	cursor: hand; /* otherwise cursor doesn't change over block <i> */
+} /* end WinIE hacks */
+
+/* end hacks */
+
+}

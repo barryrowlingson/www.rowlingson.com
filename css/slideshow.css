@@ -1,0 +1,32 @@
+ div.slideshow {
+  margin: 18px auto;
+}
+div.slideshow p {
+  padding-top: 9px;
+}
+div.slideshow ul {
+  background: #FFF;
+  bottom: -35px;
+  left: 0px;
+  position: absolute;
+  overflow: hidden;
+  padding: 5px 0;
+  z-index: 10001;
+}
+div.slideshow ul a {
+  background-position: 50% 50%;
+  cursor: pointer;
+  display: block;
+  height: 25px;
+  margin-right: 5px;
+  opacity: 0.5;
+  width: 30px;
+}
+div.slideshow ul a.active,
+div.slideshow ul a:hover {
+  opacity: 1;
+}
+div.slideshow ul li {
+  float: left;
+  list-style: none;
+}
